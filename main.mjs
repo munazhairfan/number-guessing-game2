@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     right.style.display='none';
     wrong.style.display='none';
     tryagain.style.display = 'none';
+    num.style.display='block';
     let tries = 5;
         function initialize(){
         let randomNum = Math.floor((Math.random() * 10))
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         right.style.display='none';
         wrong.style.display='none';
         tryagain.style.display = 'none';
+        num.style.display='block'
         let tries = 5;
         num.value='';
 
@@ -22,14 +24,26 @@ document.addEventListener('DOMContentLoaded',()=>{
         right.style.display='none';
         wrong.style.display='none';
         tryagain.style.display='none';
+        num.style.display='block'
         if(tries > 0 && parseInt(num.value)){
             if(num.value == randomNum){
                 right.style.display='block';
+                num.style.display='none';
+                setTimeout(()=>{
+                    num.value=''
+            },1000)
             }else{
                 wrong.style.display='block';
+                setTimeout(()=>{
+                    num.value=''
+            },1000)
                 tries--;
                 if(tries==0){
                     tryagain.style.display = 'block'
+                    num.style.display='none'
+                    setTimeout(()=>{
+                        num.value=''
+                },1000)
                 }
             }
         }
