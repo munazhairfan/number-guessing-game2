@@ -31,19 +31,19 @@ document.addEventListener('DOMContentLoaded',()=>{
                 num.style.display='none';
                 setTimeout(()=>{
                     num.value=''
-            },1000)
+            },500)
             }else{
                 wrong.style.display='block';
                 setTimeout(()=>{
                     num.value=''
-            },1000)
+            },500)
                 tries--;
                 if(tries==0){
                     tryagain.style.display = 'block'
                     num.style.display='none'
                     setTimeout(()=>{
                         num.value=''
-                },1000)
+                },500)
                 }
             }
         }
