@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body style="background-image: url(bg.avif)">
+    <h1 style="color: white; text-align: center; padding: 5vh;
+    background: linear-gradient(90deg, #ff5733, #33ff57, #3357ff, #ff33a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;">
+      NUMBER GUESSING GAME
+    </h1>
+    <h2 style="color: white; text-align: center; padding: 5vh">
+      Guess a number between 1-9!
+    </h2>
+    <div style="display: flex; justify-content: center">
+      <input
+        style="
+          height: 100px;
+          width: 200px;
+          font-size: 2rem;
+          text-align: center;
+          background-color: rgb(226, 216, 98);
+          border: none;
+        "
+        ;
+        type="text"
+        id="number"
+        placeholder="Enter here!"
+      />
+    </div>
+    <h3 id="no" style="color: red; text-align: center">TRY AGAIN!</h3>
+    <h2 id="yes" style="color: green; text-align: center">
+      CONGRATULATIONS! YOU GUESSED THE NUMBER.
+    </h2>
+    <h2 id="try" style="color: red; text-align: center">
+      YOU ONLY HAD 5 TRIES!
+    </h2>
+    <div
+    style="display: flex; justify-content: center;"
+    ><button 
+        style="color: white;
+        background-color: transparent;
+        border: none;
+        width: 70px;
+        height: 65px;
+        font-size: 3rem;
+        cursor: pointer;
+        position: absolute;
+        bottom: 10px;" id="tryagainbtn"><i class="fa-solid fa-arrows-rotate"></i></button></div>
+    <script src="main.mjs"></script>
+  </body>
+</html>
